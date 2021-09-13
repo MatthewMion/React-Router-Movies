@@ -15,7 +15,7 @@ export default function MovieList(props) {
 function MovieDetails(props) {
   const { title, director, metascore } = props.movie;
   const history = useHistory()
-  const routeToMovie = (movie) => {
+  const routeToMovie = () => {
     history.push(`/movies/${props.movie.id}`)
   }
   return (
